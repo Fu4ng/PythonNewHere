@@ -2,15 +2,9 @@
 #
 # Created by Fu4ng on 2017/7/16.
 #
+# 博文地址：http://write.blog.csdn.net/mdeditor#!postId=75119431
 # --------------------------------------#
 
-# #模版字符串
-# from  string import Template
-# s = Template ("$x,Python $x!")
-# print(s.substitute(x = 'wow'))
-# #替换字段是单词的一部分，那么参数名就必须用括号扩起来，从而指明结尾
-# s = Template("It's ${x}thon")
-# print(s.substitute(x = 'Py'))
 
 # format1 = 'hello,%s,%s nough for ya?'
 # values = ('world','hot')
