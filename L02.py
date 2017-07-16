@@ -54,12 +54,12 @@
 # x = [1, 3, 3, 3, 2]
 # x[1:4] = []
 # print(x)
-
+#
 # # # count函数
 # x = [[1, 2], 1, [1, 2]]
 # print(x.count([1, 2]))
 # print(x.count(1))
-
+#
 # # append 与 extend
 # a = [1, 2]
 # b = [4, 5]
@@ -67,15 +67,31 @@
 # print(a)
 # a.extend(b)
 # print(a)
-
+#
 # # insert
 # x=[1,2,3,5]
 # x.insert(3,"four")
 # print(x)
-
+#
 # # pop 与 remove
 # #pop返回被剔除的值，remove是一个没有返回值的原位置改变方法
 # x = [1, 2, 5, 3, 4]
 # print(x.pop(2))
 # print(x.remove(3))
+# print(x)
+
+# sort和sorted
+# x = [4, 2, 3, 0]
+# y = x[:]
+# y.sort()
+# print(y)
+# z = sorted(x)
+# print(z)
+# from functools import cmp_to_key
+# cmp = cmp_to_key(lambda x,y:x-y)
+# x.sort(reverse= True)
+# print(x)
+
+#  元组
+# x = tuple([1,2,3])
 # print(x)
