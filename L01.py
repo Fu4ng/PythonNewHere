@@ -69,4 +69,11 @@
 
 # #Unicode
 # print(u"hello world")
-#
+
+##模版字符串
+# from  string import Template
+# s = Template ("$x,Python $x!")
+# print(s.substitute(x = 'wow'))
+# #替换字段是单词的一部分，那么参数名就必须用括号扩起来，从而指明结尾
+# s = Template("It's ${x}thon")
+# print(s.substitute(x = 'Py'))
