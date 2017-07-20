@@ -6,7 +6,7 @@
 # print(type(repr(x)))
 
 
-# 创建类
+# 创建类.
 class Person:
     __age = 15
 
