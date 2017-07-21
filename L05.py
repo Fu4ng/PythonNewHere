@@ -97,3 +97,25 @@
 #     if one and two:print(one,two)
 #     else:print('No')
 # power(1,2,x=2)
+
+
+# repr和str
+x = 'avbc'
+print(x)
+print(str(x))
+print(repr(x))  # 带引号 给python看的
+
+
+# 用repr定义一个类方法的返回值
+
+class point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __repr__(self):
+        return 'point({},{})'.format(self.x, self.y)
+
+
+p = point(10, 10)
+print(p)
