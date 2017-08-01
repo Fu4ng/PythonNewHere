@@ -51,5 +51,4 @@ def prettyprint(solution):
 
 
 import random
-
 prettyprint(random.choice(list(queens(8))))
