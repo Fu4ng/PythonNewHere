@@ -29,7 +29,6 @@ def conflict(state, nextX):
 def queens(num=8, state=()):
     """
     皇后位置的生成器
-    :param num:
     :param state: 之前皇后的位置
     :return: 皇后X坐标
     """
