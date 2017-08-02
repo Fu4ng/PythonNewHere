@@ -28,16 +28,20 @@ def conflict(state, nextX):
 
 def queens(num=8, state=()):
     """
-    皇后位置的生成器
+    解法生成器
+    num是几排几列，默认是8，因为八皇后嘛
     :param state: 之前皇后的位置
     :return: 皇后X坐标
     """
     for pos in range(num):
-        if not conflict(state, pos):
-            if len(state) == num - 1:
+        if not conflict(state, pos):  # 无冲突
+            if len(state) == num - 1:  # 当len(state)==7 时，说明资讯要再生成一个位置就好了。
                 yield (pos,)
             else:
+                #使用for是因为，queens产生的解法不止一种，需要甄别，比如，第一排的摆法就有4种
                 for result in queens(num, state + (pos,)):
+                    # 递归，第一次的state是空的，然后确定了第一排的皇后
+                    #第二次，state中多了第一排皇后的位置，然后再把现在的state传下去，为第二排皇后的位置做参数
                     yield (pos,) + result
 
 
