@@ -64,6 +64,6 @@ print(f)
 
 # sub
 pat = '{name}'
-text = 'Dear{name}...'
-f = re.sub(pat, 'Mr.Lol', text)
+text = 'Dear{name}...{name}..{name}!'
+f = re.sub(pat, 'Mr.Lol', text, count=2)  # count参数是对前面几个进行代换
 print(f)
